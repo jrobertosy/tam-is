@@ -1,0 +1,26 @@
+.btn {
+  border: 2px solid white;
+  border-radius: 0.6rem;
+  background-color: transparent;
+  padding: 1.3rem 2.5rem;
+  width: 22rem;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.btn-2 {
+  border: 2px solid $color-secondary;
+  border-radius: 0;
+  background-color: $color-secondary;
+  padding: 1.3rem 2.5rem;
+  width: 22rem;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  color: $color-white;
+  text-transform: uppercase;
+
+  align-self: start;
+  margin-left: 10%;
+}

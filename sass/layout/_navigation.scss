@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+  width: 40vw;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    padding: 1rem 2rem;
+    list-style: none;
+    transition: all 0.3s;
+  }
+
+  &__item:hover {
+    transform: scale(1.2);
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: $color-primary;
+  }
+
+  &__link:hover {
+    color: $color-secondary;
+  }
+}
+
+.logo-box {
+  display: flex;
+  width: 25vw;
+
+  .logo {
+    width: 9rem;
+  }
+}

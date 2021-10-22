@@ -1,0 +1,22 @@
+.header {
+  background-image: url(../../img/hero2.jpeg);
+  background-size: cover;
+  background-repeat: none;
+  width: 100%;
+  height: calc(100vh - 10rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__title {
+    letter-spacing: 0.2rem;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 3rem;
+    color: $color-white;
+  }
+}

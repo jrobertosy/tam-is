@@ -1,0 +1,42 @@
+.about__picture {
+  width: 50vw;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: $color-white;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  &--img {
+    width: 50rem;
+    height: 70rem;
+  }
+}
+
+.about__content {
+  width: 50vw;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: $color-white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    text-align: start;
+    width: 80%;
+    color: $color-secondary;
+  }
+  &__text {
+    text-align: start;
+    width: 80%;
+    color: $color-secondary;
+
+    span {
+      color: $color-tertiary;
+    }
+  }
+}
