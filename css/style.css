@@ -1,7 +1,16 @@
+/*
+Brekapoint argument choices:
+
+-phone
+-tab-port
+-tab-land
+-big-desk
+
+*/
 .main-container {
   background-color: whitesmoke;
   width: 100%;
-  height: 150rem; }
+  height: 100%; }
 
 .navigation {
   background-color: #ffff;
@@ -14,19 +23,67 @@
 .about-section {
   display: flex;
   width: 100%; }
+  @media only screen and (max-width: 37.5em) {
+    .about-section {
+      flex-direction: column; } }
+
+.cta {
+  width: 100%;
+  background-color: #ffff;
+  padding: 10rem 0;
+  display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .cta {
+      padding: 7rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .cta {
+      flex-direction: column; } }
+
+.testimonial-container {
+  width: 100%;
+  background-color: #423c3a;
+  padding: 5rem 0; }
+
+.footer-container {
+  background-color: #ffff;
+  width: 100%;
+  height: 30rem; }
+  @media only screen and (max-width: 37.5em) {
+    .footer-container {
+      height: 100vh; } }
 
 *,
 *:before,
 *:after {
-  margin: 0;
-  padding: 0; }
+  margin: 0px;
+  padding: 0px; }
 
 html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 43.75%; } }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 37.5%; } }
 
 body {
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
   box-sizing: border-box; }
 
 .header--primary {
@@ -34,7 +91,8 @@ body {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   color: white;
-  font-weight: 100; }
+  font-weight: 100;
+  text-shadow: 2px 2px 2px #0000; }
 
 .header-2 {
   font-size: 6.5rem;
@@ -62,6 +120,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   color: white;
+  text-shadow: 3px 3px 3px #0000;
   font-weight: 100; }
 
 .header-6 {
@@ -109,6 +168,12 @@ body {
     padding: 1rem 2rem;
     list-style: none;
     transition: all 0.3s; }
+    @media only screen and (max-width: 56.25em) {
+      .nav__item {
+        padding: 0.5rem 1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .nav__item {
+        width: 70vw; } }
   .nav__item:hover {
     transform: scale(1.2); }
   .nav__link:link, .nav__link:visited {
@@ -121,6 +186,9 @@ body {
 .logo-box {
   display: flex;
   width: 25vw; }
+  @media only screen and (max-width: 37.5em) {
+    .logo-box {
+      width: 14vw; } }
   .logo-box .logo {
     width: 9rem; }
 
@@ -132,9 +200,17 @@ body {
   display: flex;
   justify-content: center;
   align-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .about__picture {
+      width: 100%;
+      padding: 5rem 0; } }
   .about__picture--img {
-    width: 50rem;
-    height: 70rem; }
+    width: 80%;
+    height: 98%; }
+    @media only screen and (max-width: 37.5em) {
+      .about__picture--img {
+        width: 70%;
+        height: 75%; } }
 
 .about__content {
   width: 50vw;
@@ -145,16 +221,236 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .about__content {
+      width: 100%; } }
   .about__content__title {
     text-align: start;
-    width: 80%;
+    width: 70%;
     color: #423c3a; }
   .about__content__text {
     text-align: start;
-    width: 80%;
+    width: 70%;
     color: #423c3a; }
     .about__content__text span {
       color: #efd9d1; }
+
+.footer {
+  background-color: #aa8976;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      flex-direction: column; } }
+  .footer__logo {
+    width: 30rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__logo {
+        width: 100%;
+        height: 20rem; } }
+    .footer__logo--img {
+      width: 16rem;
+      height: 16rem; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__logo--img {
+          width: 13rem;
+          height: 13rem; } }
+  .footer__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__contact {
+        align-items: center; } }
+    .footer__contact--text {
+      font-size: 2rem;
+      color: #423c3a;
+      font-weight: 700;
+      font-family: inherit;
+      width: 80%;
+      margin-bottom: 1.5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__contact--text {
+          width: 100%;
+          text-align: center; } }
+    .footer__contact--btn {
+      border: 2px solid #423c3a;
+      border-radius: 0;
+      background-color: #423c3a;
+      padding: 1.3rem 2.5rem;
+      font-size: 1.5rem;
+      font-family: "Times New Roman", Times, serif;
+      color: #ffff;
+      text-transform: uppercase;
+      text-decoration: none; }
+  .footer__nav--items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__nav--items {
+        width: 20rem;
+        align-items: start;
+        margin-left: 40%; } }
+  .footer__nav--item {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+    color: #423c3a;
+    font-weight: 700; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__nav--item {
+        text-align: center; } }
+
+.copyright {
+  height: 4rem;
+  margin-top: 1.5rem; }
+  .copyright__text {
+    text-align: center;
+    color: #423c3a;
+    font-size: 1.5rem;
+    font-weight: 200; }
+
+.divider {
+  background-color: #aa8976;
+  width: 100%;
+  padding: 9rem 0; }
+  .divider__text {
+    font-weight: 100;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px #0000; }
+
+.cta__content {
+  width: 50vw;
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-items: end;
+  justify-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .cta__content {
+      width: 100%;
+      margin: 10rem 0; } }
+  .cta__content--header {
+    width: 60%;
+    margin-left: 30%;
+    margin-bottom: 3rem;
+    color: #423c3a;
+    font-size: 4rem;
+    font-weight: 100; }
+    @media only screen and (max-width: 37.5em) {
+      .cta__content--header {
+        width: 100%;
+        margin-left: 10%; } }
+  .cta__content--text {
+    text-align: left;
+    margin-bottom: 3rem;
+    width: 60%;
+    margin-left: 30%;
+    color: #aa8976;
+    font-size: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .cta__content--text {
+        width: 100%;
+        margin-left: 10%; } }
+  .cta__content--btn {
+    margin-left: 20rem;
+    font-size: 15rem; }
+
+.cta__picture {
+  width: 50vw;
+  background-color: #ffff; }
+  @media only screen and (max-width: 37.5em) {
+    .cta__picture {
+      width: 100%;
+      margin: 0 auto; } }
+  .cta__picture--img {
+    width: 60%;
+    height: 80%;
+    margin: 5% 10%; }
+    @media only screen and (max-width: 750) {
+      .cta__picture--img {
+        width: 100%;
+        height: 70%;
+        margin: 5% 5%; } }
+
+.testi-title-container {
+  background-color: #423c3a; }
+  .testi-title-container .testimonial-title {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #0000; }
+
+.testimony-container {
+  background-color: #423c3a;
+  display: flex; }
+  @media only screen and (max-width: 37.5em) {
+    .testimony-container {
+      flex-direction: column; } }
+  .testimony-container .testimony {
+    width: 50vw;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .testimony-container .testimony {
+        width: 100%;
+        height: 30rem; } }
+    .testimony-container .testimony__box {
+      background-color: #423c3a;
+      width: 70%;
+      height: 40%;
+      padding: 3rem;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+      display: flex; }
+      @media only screen and (max-width: 56.25em) {
+        .testimony-container .testimony__box {
+          width: 75%;
+          padding: 1.5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .testimony-container .testimony__box {
+          height: 80%; } }
+    .testimony-container .testimony .img-container {
+      width: 12rem;
+      height: 12rem; }
+      @media only screen and (max-width: 56.25em) {
+        .testimony-container .testimony .img-container {
+          width: 10rem;
+          height: 10rem; } }
+    .testimony-container .testimony__img {
+      width: 10rem;
+      height: 10rem;
+      margin-right: 2rem;
+      border-radius: 50%; }
+      @media only screen and (max-width: 56.25em) {
+        .testimony-container .testimony__img {
+          width: 8rem;
+          height: 8rem;
+          margin-right: 1rem; } }
+    .testimony-container .testimony .testimony__details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .testimony-container .testimony .testimony__details .testimony__text {
+        font-size: 1.5rem;
+        color: #ffff;
+        justify-self: end; }
+      .testimony-container .testimony .testimony__details .testimony__name {
+        font-size: 1.5rem;
+        color: #aa8976; }
+      .testimony-container .testimony .testimony__details .testimony__position {
+        font-size: 1.5rem;
+        color: #ffff; }
 
 .btn {
   border: 2px solid white;
@@ -179,3 +475,21 @@ body {
   text-transform: uppercase;
   align-self: start;
   margin-left: 10%; }
+  @media only screen and (max-width: 37.5em) {
+    .btn-2 {
+      margin-left: 15%; } }
+
+.btn-3 {
+  border: 2px solid #423c3a;
+  border-radius: 0;
+  background-color: #423c3a;
+  padding: 1.3rem 2.5rem;
+  width: 19rem;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffff;
+  text-transform: uppercase;
+  margin-left: 30%; }
+  @media only screen and (max-width: 37.5em) {
+    .btn-3 {
+      margin-left: 10%; } }

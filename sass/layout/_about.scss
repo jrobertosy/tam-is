@@ -8,9 +8,19 @@
   justify-content: center;
   align-content: center;
 
+  @include respond(phone) {
+    width: 100%;
+    padding: 5rem 0;
+  }
+
   &--img {
-    width: 50rem;
-    height: 70rem;
+    width: 80%;
+    height: 98%;
+
+    @include respond(phone) {
+      width: 70%;
+      height: 75%;
+    }
   }
 }
 
@@ -25,14 +35,18 @@
   justify-content: center;
   align-items: center;
 
+  @include respond(phone) {
+    width: 100%;
+  }
+
   &__title {
     text-align: start;
-    width: 80%;
+    width: 70%;
     color: $color-secondary;
   }
   &__text {
     text-align: start;
-    width: 80%;
+    width: 70%;
     color: $color-secondary;
 
     span {

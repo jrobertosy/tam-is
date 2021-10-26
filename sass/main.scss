@@ -1,5 +1,5 @@
 @import "abstracts/variables";
-@import "abstracts/mixens.scss";
+@import "abstracts/mixins.scss";
 
 @import "pages/home";
 
@@ -12,6 +12,9 @@
 @import "layout/navigation";
 @import "layout/about";
 @import "layout/footer";
+@import "layout/divider";
+@import "layout/cta";
+@import "layout/testimonials";
 
 @import "components/buttons";
 @import "components/forms";

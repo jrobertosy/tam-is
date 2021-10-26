@@ -8,6 +8,14 @@
     padding: 1rem 2rem;
     list-style: none;
     transition: all 0.3s;
+
+    @include respond(tab-port) {
+      padding: 0.5rem 1rem;
+    }
+
+    @include respond(phone) {
+      width: 70vw;
+    }
   }
 
   &__item:hover {
@@ -29,6 +37,10 @@
 .logo-box {
   display: flex;
   width: 25vw;
+
+  @include respond(phone) {
+    width: 14vw;
+  }
 
   .logo {
     width: 9rem;
